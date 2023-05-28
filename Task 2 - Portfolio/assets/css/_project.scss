@@ -1,0 +1,16 @@
+.project-section{
+    padding: 7.5rem 0;
+    .project-heading{
+        @include section-heading();
+        padding: 0 20px 48px 20px;
+    }
+    .project-text{
+        padding: 5rem;
+        @include links($primary-color, $primary-hover);
+        .btn{
+            font-size: 80%;
+            font-family: $secondary-font;
+            border-bottom: 5px solid $primary-color;
+        }
+    }
+}

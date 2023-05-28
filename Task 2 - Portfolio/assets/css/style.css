@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+header .navigation a {
+  text-decoration: none;
+  color: gainsboro;
+}
+header .navigation a:hover {
+  color: #fff;
+}
+header .navigation a {
+  font-weight: 500;
+}
+header .navigation .menu ul li {
+  padding: 2rem 1.5rem;
+}
+header .navigation .menu ul li .resume-btn {
+  color: #D371C0;
+  border: 3px solid #D371C0;
+}
+header .navigation .menu ul li .resume-btn:hover {
+  color: #b875ab;
+  border-color: #b875ab;
+}
+header .navigation .menu.open ul {
+  height: 17.5rem;
+}
+header .navigation .menu-btn {
+  display: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  border: 1px solid #D371C0;
+}
+
+header.fadebg {
+  background-color: #fff;
+}
+header.fadebg a {
+  color: black;
+}
+header.fadebg a:hover {
+  color: #D371C0;
+}
+
+.introduction {
+  min-height: 100vh;
+}
+.introduction .circular-image {
+  margin-top: 6.25rem;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+.introduction .title .name {
+  font-family: "Varela Round", sans-serif;
+  font-size: 6.5rem;
+  letter-spacing: 0.8rem;
+}
+.introduction .title .skill {
+  font-size: 1.25rem;
+  max-width: 40rem;
+}
+.introduction #moreBtn {
+  background-color: #D371C0;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 80%;
+  letter-spacing: 0.15rem;
+  transform: all 0.15s ease-in-out;
+}
+.introduction #moreBtn:hover {
+  background-color: #b875ab;
+}
+
+.about-section {
+  padding: 8rem 0;
+  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+.about-section a {
+  text-decoration: none;
+  color: #D371C0;
+}
+.about-section a:hover {
+  color: #b875ab;
+}
+
+@media (max-width: 991px) {
+  header {
+    background-color: #fff;
+  }
+  header .navigation a {
+    color: #161616;
+  }
+  header .navigation .menu ul {
+    transition: all 0.5s ease-in-out;
+    background-color: #fff !important;
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  header .navigation .menu ul li {
+    padding: 0.8rem 0;
+  }
+  header .navigation .menu-btn {
+    display: block;
+  }
+  .introduction .circular-image {
+    margin-top: 15rem;
+  }
+  .introduction .title .name {
+    font-size: 4rem;
+  }
+  .introduction .title .skill {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .work-section .work .company, .work-section .work .job-role, .work-section .work .time-period {
+    text-align: center;
+  }
+  .project-section .project-text {
+    padding: 3rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .introduction .title .name {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 591px) {
+  .work-section .work {
+    padding: 5rem 3rem !important;
+  }
+  .project-section .project-text {
+    padding: 1.5rem !important;
+  }
+}
+@media (max-width: 360px) {
+  .work-section .work {
+    padding: 5rem 2rem !important;
+  }
+  .work-section .work .work-heading h2 {
+    text-align: center;
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .work-section .work .work-heading p {
+    text-align: center;
+  }
+  .project-section .project-text h4 {
+    font-size: 1.2rem;
+  }
+}
+.work-section {
+  padding: 5rem 0;
+}
+.work-section .work {
+  padding: 5rem;
+}
+.work-section .work .work-heading {
+  letter-spacing: 1px;
+}
+.work-section .work .work-heading a {
+  text-decoration: none;
+  color: #D371C0;
+}
+.work-section .work .work-heading a:hover {
+  color: #b875ab;
+}
+.work-section .work .work-heading h2 {
+  padding-left: 2rem;
+  border-left: 8px solid #D371C0;
+}
+.work-section .work .circular-logo {
+  height: 68px;
+  margin-bottom: 20px;
+}
+
+.project-section {
+  padding: 7.5rem 0;
+}
+.project-section .project-heading {
+  letter-spacing: 1px;
+  padding: 0 20px 48px 20px;
+}
+.project-section .project-heading a {
+  text-decoration: none;
+  color: #D371C0;
+}
+.project-section .project-heading a:hover {
+  color: #b875ab;
+}
+.project-section .project-heading h2 {
+  padding-left: 2rem;
+  border-left: 8px solid #D371C0;
+}
+.project-section .project-text {
+  padding: 5rem;
+}
+.project-section .project-text a {
+  text-decoration: none;
+  color: #D371C0;
+}
+.project-section .project-text a:hover {
+  color: #b875ab;
+}
+.project-section .project-text .btn {
+  font-size: 80%;
+  font-family: "Varela Round", sans-serif;
+  border-bottom: 5px solid #D371C0;
+}
+
+.contact-section {
+  padding: 7.5rem 0;
+}
+.contact-section .card {
+  border-bottom: 0.25rem solid #D371C0;
+}
+.contact-section .card .card-body a {
+  text-decoration: none;
+  color: #D371C0;
+}
+.contact-section .card .card-body a:hover {
+  color: #b875ab;
+}
+.contact-section .card .card-body i {
+  color: #D371C0;
+}
+.contact-section .card .card-body span {
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  border-bottom: 0.25rem solid #D371C0;
+}
+.contact-section .card .card-body .social a i {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Nunito" !important;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bg-grey {
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(../image/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
